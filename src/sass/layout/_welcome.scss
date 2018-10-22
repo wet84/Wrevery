@@ -1,0 +1,102 @@
+.caption {
+  display: inline-block;
+  .strip {
+    border-bottom: 2px solid $caption-color;
+    padding-top: 15px;
+    width: 80%;
+  }
+}
+
+h2 {
+  color: $caption-color;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.big-center-text {
+  color: $text-color;
+  font-size: 42px;
+  max-width: 1100px;
+  font-weight: 100;
+}
+
+.welcome-section {
+  margin: 100px 200px 230px 200px;
+  .card-area {
+    .welcome-card {
+      max-width: 340px;
+      margin: 0 20px 30px 20px;
+      .welcome-card__img {
+        height: 160px;
+        .img-circle {
+          height: 110px;
+          width: 110px;
+          border-radius: 50%;
+          box-shadow: 0px 10px 29px -9px rgba(0,0,0,0.75);
+        }
+      }
+      .welcome-card__caption{
+        margin-bottom: 28px;
+        h3 {
+          color: $card-caption-color;
+          font-size: 26px;
+        }
+      }
+      .welcome-card__text {
+        p {
+          color: $card-text-color;
+          font-size: 20px;
+        }
+      }
+    }
+
+    .welcome-card.flexibility {
+      .welcome-card__img {
+        background: url('./img/bg-card-blue.png') 50% 50% no-repeat;
+        .img-circle {
+          background:#fff url('./img/welcome-blue.svg') 50% 50% / 60% no-repeat;
+        }
+      }
+    }
+    .welcome-card.smart {
+      .welcome-card__img {
+        background: url('./img/bg-card-red.png') 50% 50% no-repeat;
+        .img-circle {
+          background:#fff url('./img/welcome-red.svg') 50% 50% / 60% no-repeat;
+        }
+      }
+    }
+    .welcome-card.resolute-approach {
+      .welcome-card__img {
+        background: url('./img/bg-card-green.png') 50% 50% no-repeat;
+        .img-circle {
+          background:#fff url('./img/welcome-green.svg') 50% 50% / 60% no-repeat;
+        }
+      }
+    }
+  }
+}
+
+
+// ***************** media *****************
+@media only screen and (min-width: 1800px) {
+  .welcome-section {
+    .card-area {
+      .welcome-card {
+        max-width: 420px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .welcome-section {
+    margin: 100px 100px 230px 100px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .welcome-section {
+    margin: 100px 50px 230px 50px;
+  }
+}

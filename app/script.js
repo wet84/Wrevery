@@ -1,1 +1,1 @@
-"use strict";var test="string";
+"use strict";$(document).ready(function(){$(".menu__icon").on("click",function(){$(this).closest(".menu").toggleClass("menu_state_open")}),$(".menu__links-item").on("click",function(){$(this).closest(".menu").removeClass("menu_state_open")})});
