@@ -13,11 +13,12 @@
 
   .bg-small-figure-elem {
     background: url('./img/small-figure-bg.png') 50% 50% no-repeat;
-    width: 1300px;
-    height: 1000px;
+    width: 2000px;
+    height: 2000px;
     position: absolute;
     background-size: contain;
-    top: 0;
+    top: 91px;
+    left: -182px;
   }
   .services-section-content {
     margin: 0px 200px 230px 200px;
@@ -99,16 +100,92 @@
     margin: 60px 100px 230px 100px;
     .icons-technology {
       margin-top: 60px;
-      height: 490px;
+      min-height: 490px;
       width: 1440px;
       box-shadow: 0px 0px 27px -2px rgba(0,0,0,0.2);
-      // background: url('./img/sprite-tehnology.png') 50% 50% no-repeat;
-        .icon-tech {
-          width: 100px;
-          height: 100px;
-          border: 1px solid red;
+      padding: 0 15px;
+      border-radius: 20px;
+      background-color: #fff;
+        .row-icons {
+          width: 100%;
+          .icon-tech {
+            width: 120px;
+            height: 100px;
+            margin: 20px;
+          }
+          .json-img {
+            background: url('./img/sprite-tehnology.png') 7px -7px no-repeat;
+          }
+          .docker-img {
+            background: url('./img/sprite-tehnology.png') -186px -7px no-repeat;
+          }
+          .ios-img {
+            background: url('./img/sprite-tehnology.png') -370px -7px no-repeat;
+          }
+          .aws-img {
+            background: url('./img/sprite-tehnology.png') -538px -7px no-repeat;
+          }
+          .mysql-img {
+            background: url('./img/sprite-tehnology.png') -697px -7px no-repeat;
+          }
+          .php-img {
+            background: url('./img/sprite-tehnology.png') -859px -7px no-repeat;
+          }
+          .nodejs-img {
+            background: url('./img/sprite-tehnology.png') -1016px -3px no-repeat;
+          }
+          .bigdata-img {
+            background: url('./img/sprite-tehnology.png') -1207px -1px no-repeat;
+          }
+          .objc-img {
+            background: url('./img/sprite-tehnology.png') 6px -140px no-repeat;
+          }
+          .java-img {
+            background: url('./img/sprite-tehnology.png') -190px -130px no-repeat;
+          }
+          .android-img {
+            background: url('./img/sprite-tehnology.png') -371px -129px no-repeat;
+          }
+          .git-img {
+            background: url('./img/sprite-tehnology.png') -538px -129px no-repeat;
+          }
+          .sqlite-img {
+            background: url('./img/sprite-tehnology.png') -698px -129px no-repeat;
+          }
+          .c-img {
+            background: url('./img/sprite-tehnology.png') -861px -129px no-repeat;
+          }
+          .js-img {
+            background: url('./img/sprite-tehnology.png') -1019px -129px no-repeat;
+          }
+          .raspberry-img {
+            background: url('./img/sprite-tehnology.png') -1207px -129px no-repeat;
+          }
+          .sass-img {
+            background: url('./img/sprite-tehnology.png') 9px -272px no-repeat;
+          }
+          .bootstrap-img {
+            background: url('./img/sprite-tehnology.png') -186px -272px no-repeat;
+          }
+          .jqwery-img {
+            background: url('./img/sprite-tehnology.png') -370px -272px no-repeat;
+          }
+          .laravel-img {
+            background: url('./img/sprite-tehnology.png') -538px -272px no-repeat;
+          }
+          .swift-img{
+            background: url('./img/sprite-tehnology.png') -702px -272px no-repeat;
+          }
+          .html-img{
+            background: url('./img/sprite-tehnology.png') -859px -272px no-repeat;
+          }
+          .css-img {
+            background: url('./img/sprite-tehnology.png') -1016px -272px no-repeat;
+          }
+          .postgree-img {
+            background: url('./img/sprite-tehnology.png') -1207px -272px no-repeat;
+          }
         }
-
     }
   }
 }
@@ -126,9 +203,18 @@
 
 @media only screen and (max-width: 1600px) {
   .services-section {
-    .services-section-content,
+    .services-section-content {
+      margin: 0 100px 230px 100px;
+    }
     .services-section-technology {
       margin: 0 100px 230px 100px;
+      .icons-technology {
+        .row-icons {
+          .icon-tech {
+            margin: 20px 10px;
+          }
+        }
+      }
     }
   }
 }
@@ -160,11 +246,29 @@
 @media only screen and (max-width: 992px) {
   .services-section {
     .services-section-content {
+      margin: 50px;
       .service-text {
         margin: 50px 0;
       }
       .mob-reverse {
         flex-direction: column-reverse;
+      }
+    }
+    .services-section-technology {
+      margin: 50px 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .services-section {
+    .services-section-technology {
+      .icons-technology {
+        .row-icons{
+          .icon-tech {
+            margin: 10px 0;
+          }
+        }
       }
     }
   }

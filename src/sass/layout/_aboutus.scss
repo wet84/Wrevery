@@ -48,3 +48,14 @@
     }
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .about-us-section {
+    .about-us-section-content {
+      margin: 50px;
+      .about-us-text {
+        font-size: 18px;
+      }
+    }
+  }
+}

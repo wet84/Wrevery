@@ -117,6 +117,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     .header .main-nav .menu .menu__icon span {
       background: #263238; } }
 
+body {
+  min-width: 320px; }
+
 .start-section {
   background: transparent url("./img/min-bgimg-top.png") no-repeat;
   height: 1080px;
@@ -317,6 +320,12 @@ h2 {
   .welcome-section {
     margin: 100px 50px 230px 50px; } }
 
+@media only screen and (max-width: 992px) {
+  .big-center-text {
+    font-size: 32px; }
+  .welcome-section {
+    margin: 50px; } }
+
 .about-us-section {
   position: relative;
   overflow: hidden; }
@@ -348,6 +357,12 @@ h2 {
   .about-us-section .about-us-section-content {
     margin: 0 50px 280px 50px; } }
 
+@media only screen and (max-width: 992px) {
+  .about-us-section .about-us-section-content {
+    margin: 50px; }
+    .about-us-section .about-us-section-content .about-us-text {
+      font-size: 18px; } }
+
 .services-section {
   position: relative;
   overflow: hidden; }
@@ -361,11 +376,12 @@ h2 {
     left: -150px; }
   .services-section .bg-small-figure-elem {
     background: url("./img/small-figure-bg.png") 50% 50% no-repeat;
-    width: 1300px;
-    height: 1000px;
+    width: 2000px;
+    height: 2000px;
     position: absolute;
     background-size: contain;
-    top: 0; }
+    top: 91px;
+    left: -182px; }
   .services-section .services-section-content {
     margin: 0px 200px 230px 200px; }
     .services-section .services-section-content .service-blocks .service-block {
@@ -422,22 +438,78 @@ h2 {
     margin: 60px 100px 230px 100px; }
     .services-section .services-section-technology .icons-technology {
       margin-top: 60px;
-      height: 490px;
+      min-height: 490px;
       width: 1440px;
-      box-shadow: 0px 0px 27px -2px rgba(0, 0, 0, 0.2); }
-      .services-section .services-section-technology .icons-technology .icon-tech {
-        width: 100px;
-        height: 100px;
-        border: 1px solid red; }
+      box-shadow: 0px 0px 27px -2px rgba(0, 0, 0, 0.2);
+      padding: 0 15px;
+      border-radius: 20px;
+      background-color: #fff; }
+      .services-section .services-section-technology .icons-technology .row-icons {
+        width: 100%; }
+        .services-section .services-section-technology .icons-technology .row-icons .icon-tech {
+          width: 120px;
+          height: 100px;
+          margin: 20px; }
+        .services-section .services-section-technology .icons-technology .row-icons .json-img {
+          background: url("./img/sprite-tehnology.png") 7px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .docker-img {
+          background: url("./img/sprite-tehnology.png") -186px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .ios-img {
+          background: url("./img/sprite-tehnology.png") -370px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .aws-img {
+          background: url("./img/sprite-tehnology.png") -538px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .mysql-img {
+          background: url("./img/sprite-tehnology.png") -697px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .php-img {
+          background: url("./img/sprite-tehnology.png") -859px -7px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .nodejs-img {
+          background: url("./img/sprite-tehnology.png") -1016px -3px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .bigdata-img {
+          background: url("./img/sprite-tehnology.png") -1207px -1px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .objc-img {
+          background: url("./img/sprite-tehnology.png") 6px -140px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .java-img {
+          background: url("./img/sprite-tehnology.png") -190px -130px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .android-img {
+          background: url("./img/sprite-tehnology.png") -371px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .git-img {
+          background: url("./img/sprite-tehnology.png") -538px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .sqlite-img {
+          background: url("./img/sprite-tehnology.png") -698px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .c-img {
+          background: url("./img/sprite-tehnology.png") -861px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .js-img {
+          background: url("./img/sprite-tehnology.png") -1019px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .raspberry-img {
+          background: url("./img/sprite-tehnology.png") -1207px -129px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .sass-img {
+          background: url("./img/sprite-tehnology.png") 9px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .bootstrap-img {
+          background: url("./img/sprite-tehnology.png") -186px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .jqwery-img {
+          background: url("./img/sprite-tehnology.png") -370px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .laravel-img {
+          background: url("./img/sprite-tehnology.png") -538px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .swift-img {
+          background: url("./img/sprite-tehnology.png") -702px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .html-img {
+          background: url("./img/sprite-tehnology.png") -859px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .css-img {
+          background: url("./img/sprite-tehnology.png") -1016px -272px no-repeat; }
+        .services-section .services-section-technology .icons-technology .row-icons .postgree-img {
+          background: url("./img/sprite-tehnology.png") -1207px -272px no-repeat; }
 
 @media only screen and (max-width: 1800px) {
   .services-section .services-section-content .service-text {
     margin: 200px 0 0 130px; } }
 
 @media only screen and (max-width: 1600px) {
-  .services-section .services-section-content,
+  .services-section .services-section-content {
+    margin: 0 100px 230px 100px; }
   .services-section .services-section-technology {
-    margin: 0 100px 230px 100px; } }
+    margin: 0 100px 230px 100px; }
+    .services-section .services-section-technology .icons-technology .row-icons .icon-tech {
+      margin: 20px 10px; } }
 
 @media only screen and (max-width: 1400px) {
   .services-section .services-section-content,
@@ -451,7 +523,88 @@ h2 {
     margin: 200px 0 0 50px; } }
 
 @media only screen and (max-width: 992px) {
-  .services-section .services-section-content .service-text {
-    margin: 50px 0; }
-  .services-section .services-section-content .mob-reverse {
-    flex-direction: column-reverse; } }
+  .services-section .services-section-content {
+    margin: 50px; }
+    .services-section .services-section-content .service-text {
+      margin: 50px 0; }
+    .services-section .services-section-content .mob-reverse {
+      flex-direction: column-reverse; }
+  .services-section .services-section-technology {
+    margin: 50px 0; } }
+
+@media only screen and (max-width: 576px) {
+  .services-section .services-section-technology .icons-technology .row-icons .icon-tech {
+    margin: 10px 0; } }
+
+.ourProjects-section .project-slider {
+  max-height: 460px; }
+  .ourProjects-section .project-slider .slider {
+    margin: 100px auto; }
+    .ourProjects-section .project-slider .slider .rectangle-bg-slider {
+      width: 230px;
+      height: 230px;
+      background: url("./img/rectangle-slider.png") 50% 50% no-repeat;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      color: #fff;
+      padding-top: 60px;
+      font-size: 36px;
+      display: inline-block;
+      background-size: contain; }
+    .ourProjects-section .project-slider .slider a:hover {
+      text-decoration: none; }
+    .ourProjects-section .project-slider .slider a:active,
+    .ourProjects-section .project-slider .slider :focus {
+      outline: none;
+      border: none; }
+  .ourProjects-section .project-slider .slick-dots li {
+    opacity: 0.5;
+    width: 15px;
+    height: 15px;
+    background: #2962ff;
+    transform: rotate(45deg);
+    border-radius: 6px; }
+  .ourProjects-section .project-slider .slick-dots li.slick-active {
+    opacity: 1 !important;
+    background: url("./img/active-dot-slider.png") 50% 50% no-repeat;
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    transform: rotate(0deg); }
+  .ourProjects-section .project-slider .slick-dots li button:before {
+    content: none; }
+  .ourProjects-section .project-slider .slick-slide {
+    width: 100%;
+    position: relative; }
+  .ourProjects-section .project-slider .slick-slide img {
+    width: 100%; }
+  .ourProjects-section .project-slider .slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .1; }
+  .ourProjects-section .project-slider .slick-active {
+    opacity: .5; }
+  .ourProjects-section .project-slider .slick-current {
+    opacity: 1; }
+  .ourProjects-section .project-slider .slick-dots {
+    bottom: -60px; }
+
+@media only screen and (max-width: 1100px) {
+  .ourProjects-section .project-slider .slider .rectangle-bg-slider {
+    width: 190px;
+    height: 190px;
+    padding-top: 50px;
+    font-size: 34px; } }
+
+@media only screen and (max-width: 992px) {
+  .ourProjects-section .project-slider .slider .rectangle-bg-slider {
+    width: 150px;
+    height: 150px;
+    padding-top: 40px;
+    font-size: 22px; } }
+
+@media only screen and (max-width: 768px) {
+  .ourProjects-section .project-slider .slider {
+    margin: 35px auto; } }
