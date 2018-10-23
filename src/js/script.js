@@ -16,12 +16,20 @@
 // })(jQuery);
 
 $(document).ready(function() {
+  //mobile menu
   $('.menu__icon').on('click', function() {
     $(this).closest('.menu').toggleClass('menu_state_open');
   });
   
   $('.menu__links-item').on('click', function() {
     $(this).closest('.menu').removeClass('menu_state_open');
+  });
+
+  $(".menu__links").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
   });
 
   //slick slider

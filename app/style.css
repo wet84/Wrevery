@@ -324,7 +324,13 @@ h2 {
   .big-center-text {
     font-size: 32px; }
   .welcome-section {
-    margin: 50px; } }
+    margin: 50px 0; } }
+
+@media only screen and (max-width: 576px) {
+  .welcome-section .card-area {
+    font-size: 32px; }
+    .welcome-section .card-area .welcome-card {
+      margin: 20px 0; } }
 
 .about-us-section {
   position: relative;
@@ -359,9 +365,15 @@ h2 {
 
 @media only screen and (max-width: 992px) {
   .about-us-section .about-us-section-content {
-    margin: 50px; }
+    margin: 50px 0 0 0; }
+    .about-us-section .about-us-section-content .about-us-image {
+      height: 480px; }
     .about-us-section .about-us-section-content .about-us-text {
       font-size: 18px; } }
+
+@media only screen and (max-width: 576px) {
+  .about-us-section .about-us-section-content .about-us-image {
+    height: 400px; } }
 
 .services-section {
   position: relative;
@@ -524,7 +536,9 @@ h2 {
 
 @media only screen and (max-width: 992px) {
   .services-section .services-section-content {
-    margin: 50px; }
+    margin: 50px 0; }
+    .services-section .services-section-content .service-blocks .service-block {
+      margin: 20px; }
     .services-section .services-section-content .service-text {
       margin: 50px 0; }
     .services-section .services-section-content .mob-reverse {
@@ -532,64 +546,83 @@ h2 {
   .services-section .services-section-technology {
     margin: 50px 0; } }
 
+@media only screen and (max-width: 768px) {
+  .services-section .services-section-content .service-blocks .service-block {
+    max-width: 240px;
+    height: 240px;
+    font-size: 18px; }
+    .services-section .services-section-content .service-blocks .service-block .service-block__caption {
+      bottom: 20px; } }
+
 @media only screen and (max-width: 576px) {
+  .services-section .services-section-content .service-blocks .service-block {
+    max-width: 240px;
+    height: 190px;
+    font-size: 16px;
+    margin: 20px 0; }
+    .services-section .services-section-content .service-blocks .service-block .service-block__img {
+      top: 57%; }
+    .services-section .services-section-content .service-blocks .service-block .service-block__caption {
+      bottom: 4px; }
   .services-section .services-section-technology .icons-technology .row-icons .icon-tech {
     margin: 10px 0; } }
 
-.ourProjects-section .project-slider {
-  max-height: 460px; }
-  .ourProjects-section .project-slider .slider {
-    margin: 100px auto; }
-    .ourProjects-section .project-slider .slider .rectangle-bg-slider {
-      width: 230px;
-      height: 230px;
-      background: url("./img/rectangle-slider.png") 50% 50% no-repeat;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      text-align: center;
-      color: #fff;
-      padding-top: 60px;
-      font-size: 36px;
-      display: inline-block;
-      background-size: contain; }
-    .ourProjects-section .project-slider .slider a:hover {
-      text-decoration: none; }
-    .ourProjects-section .project-slider .slider a:active,
-    .ourProjects-section .project-slider .slider :focus {
-      outline: none;
-      border: none; }
-  .ourProjects-section .project-slider .slick-dots li {
-    opacity: 0.5;
-    width: 15px;
-    height: 15px;
-    background: #2962ff;
-    transform: rotate(45deg);
-    border-radius: 6px; }
-  .ourProjects-section .project-slider .slick-dots li.slick-active {
-    opacity: 1 !important;
-    background: url("./img/active-dot-slider.png") 50% 50% no-repeat;
-    width: 20px;
-    height: 20px;
-    background-size: contain;
-    transform: rotate(0deg); }
-  .ourProjects-section .project-slider .slick-dots li button:before {
-    content: none; }
-  .ourProjects-section .project-slider .slick-slide {
-    width: 100%;
-    position: relative; }
-  .ourProjects-section .project-slider .slick-slide img {
-    width: 100%; }
-  .ourProjects-section .project-slider .slick-slide {
-    transition: all ease-in-out .3s;
-    opacity: .1; }
-  .ourProjects-section .project-slider .slick-active {
-    opacity: .5; }
-  .ourProjects-section .project-slider .slick-current {
-    opacity: 1; }
-  .ourProjects-section .project-slider .slick-dots {
-    bottom: -60px; }
+.ourProjects-section {
+  margin-bottom: 80px; }
+  .ourProjects-section .project-slider {
+    max-height: 460px; }
+    .ourProjects-section .project-slider .slider {
+      margin: 100px auto; }
+      .ourProjects-section .project-slider .slider .rectangle-bg-slider {
+        width: 230px;
+        height: 230px;
+        background: url("./img/rectangle-slider.png") 50% 50% no-repeat;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        color: #fff;
+        padding-top: 60px;
+        font-size: 36px;
+        display: inline-block;
+        background-size: contain; }
+      .ourProjects-section .project-slider .slider a:hover {
+        text-decoration: none; }
+      .ourProjects-section .project-slider .slider a:active,
+      .ourProjects-section .project-slider .slider :focus {
+        outline: none;
+        border: none; }
+    .ourProjects-section .project-slider .slick-dots li {
+      opacity: 0.5;
+      width: 15px;
+      height: 15px;
+      background: #2962ff;
+      transform: rotate(45deg);
+      border-radius: 6px; }
+    .ourProjects-section .project-slider .slick-dots li.slick-active {
+      opacity: 1 !important;
+      background: url("./img/active-dot-slider.png") 50% 50% no-repeat;
+      width: 20px;
+      height: 20px;
+      background-size: contain;
+      transform: rotate(0deg); }
+    .ourProjects-section .project-slider .slick-dots li button:before {
+      content: none; }
+    .ourProjects-section .project-slider .slick-slide {
+      width: 100%;
+      position: relative; }
+    .ourProjects-section .project-slider .slick-slide img {
+      width: 100%; }
+    .ourProjects-section .project-slider .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .1; }
+    .ourProjects-section .project-slider .slick-active {
+      opacity: .5; }
+    .ourProjects-section .project-slider .slick-current {
+      opacity: 1; }
+    .ourProjects-section .project-slider .slick-dots {
+      bottom: -60px; }
 
 @media only screen and (max-width: 1100px) {
   .ourProjects-section .project-slider .slider .rectangle-bg-slider {
@@ -608,3 +641,61 @@ h2 {
 @media only screen and (max-width: 768px) {
   .ourProjects-section .project-slider .slider {
     margin: 35px auto; } }
+
+.contact-section {
+  position: relative;
+  overflow: hidden; }
+  .contact-section .bg-small-figure-contact {
+    background: url("./img/small-figure-bg-contact.png") 50% 50% no-repeat;
+    width: 2200px;
+    height: 2150px;
+    position: absolute;
+    background-size: contain;
+    top: -735px;
+    left: 11px; }
+  .contact-section .contact-section-content {
+    margin: 230px 200px; }
+    .contact-section .contact-section-content .contact-text {
+      font-size: 20px;
+      color: #546e7a; }
+      .contact-section .contact-section-content .contact-text p {
+        margin: 40px 0; }
+        .contact-section .contact-section-content .contact-text p i {
+          width: 33px;
+          height: 33px;
+          display: inline-block;
+          margin-right: 20px; }
+        .contact-section .contact-section-content .contact-text p .adress-icon {
+          background: url("./img/adress.svg") 50% 50% no-repeat; }
+        .contact-section .contact-section-content .contact-text p .tel-icon {
+          background: url("./img/telephone.svg") 50% 50% no-repeat; }
+        .contact-section .contact-section-content .contact-text p .email-icon {
+          background: url("./img/email.svg") 50% 50% no-repeat; }
+        .contact-section .contact-section-content .contact-text p a {
+          text-decoration: none;
+          color: #546e7a; }
+  .contact-section .map-area {
+    height: 330px;
+    width: 100%; }
+
+@media only screen and (max-width: 1600px) {
+  .contact-section .contact-section-content {
+    margin: 230px 100px; } }
+
+@media only screen and (max-width: 1400px) {
+  .contact-section .contact-section-content {
+    margin: 230px 50px; } }
+
+@media only screen and (max-width: 1300px) {
+  .contact-section .contact-section-content .contact-text {
+    font-size: 18px; }
+    .contact-section .contact-section-content .contact-text p i {
+      margin-right: 10px; } }
+
+@media only screen and (max-width: 1200px) {
+  .contact-section .contact-section-content .contact-text {
+    font-size: 16px; } }
+
+@media only screen and (max-width: 992px) {
+  .contact-section .contact-section-content {
+    margin: 50px 0; } }
