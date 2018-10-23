@@ -35,14 +35,36 @@ $(document).ready(function() {
       }
     ]
   });
-});
 
-// $(document).on('ready', function() {
-//   $('.regular').slick({
-//     dots: true,
-//     infinite: true,
-//     slidesToShow: 3,
-//     slidesToScroll: 3
-//   });
-// });
+  // change text for service block
+
+  var serviceText;
+  $.get("text.json", function(data){
+    serviceText = data;
+  });
+
+  $(".service-block").on("click", function (event) {
+    event.preventDefault();
+    var click = event.target;
+    
+    if ($(click).attr('atr') == 'design') {
+      $('.dynamic-text').html(serviceText.design);
+    }
+    if ($(click).attr('atr') == 'mobile_dev') {
+      $('.dynamic-text').html(serviceText.mobile_dev);
+    }
+    if ($(click).attr('atr') == 'web_dev') {
+      $('.dynamic-text').html(serviceText.web_dev);
+    }
+    if ($(click).attr('atr') == 'testing') {
+      $('.dynamic-text').html(serviceText.testing);
+    }
+    if ($(click).attr('atr') == 'server') {
+      $('.dynamic-text').html(serviceText.server);
+    }
+    if ($(click).attr('atr') == 'copywriting') {
+      $('.dynamic-text').html(serviceText.copywriting);
+    }
+  });
+});
 

@@ -3,7 +3,6 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify'),
-    babel = require("gulp-babel"),
     cache = require('gulp-cache'),
     image = require('gulp-image');
 
@@ -36,9 +35,6 @@ gulp.task('js', function () {
     .src('./src/js/*.js')
     .on('error', console.log)
     .pipe(concat('script.js'))
-    .pipe(babel({
-      presets: ['env']
-    }))
     .pipe(uglify())
     .pipe(gulp.dest('app'))
     .pipe(browserSync.reload({ stream: true }))
