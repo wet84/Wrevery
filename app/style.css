@@ -148,7 +148,7 @@ body {
     font-style: italic;
     line-height: 1.2;
     position: absolute;
-    top: 660px;
+    top: 70%;
     left: 118px; }
     .start-section .text-block p {
       color: #37474f; }
@@ -296,7 +296,6 @@ body {
       left: 25px;
       width: 90%;
       text-align: center;
-      top: 550px;
       font-size: 20px; }
     .start-section .social-link-block {
       left: 25px;
@@ -310,11 +309,10 @@ body {
   .start-section .main-image-block {
     background-position: 100% 27%; } }
 
-@media only screen and (max-height: 768px) {
-  .start-section .text-block {
-    top: 580px; } }
-
 @media only screen and (max-height: 420px) {
+  .start-section .text-block {
+    top: 65%;
+    font-size: 18px; }
   .start-section .header .main-nav .menu .menu__icon span {
     background: #fff; }
   .start-section .main-image-block .main-image-text {

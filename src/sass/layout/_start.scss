@@ -35,7 +35,7 @@ body {
     font-style: italic;
     line-height: 1.2;
     position: absolute;
-    top: 660px;
+    top: 70%;
     left: 118px;
     p {
       color: $text-color;
@@ -261,7 +261,6 @@ body {
       left: 25px;
       width: 90%;
       text-align: center;
-      top: 550px;
       font-size: 20px;
     }
     .social-link-block {
@@ -284,16 +283,12 @@ body {
   }
 }
 
-@media only screen and (max-height: 768px) {
-  .start-section {
-    .text-block {
-      top: 580px;
-    }
-  }
-}
-
 @media only screen and (max-height: 420px) {
   .start-section {
+    .text-block {
+      top: 65%;
+      font-size: 18px;
+    }
     .header {
       .main-nav {
         .menu {
