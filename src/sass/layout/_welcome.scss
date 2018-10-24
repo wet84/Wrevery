@@ -24,6 +24,7 @@ h2 {
 .welcome-section {
   margin: 100px 200px 230px 200px;
   .card-area {
+    margin-top: 140px;
     .welcome-card {
       max-width: 340px;
       margin: 0 20px 30px 20px;
@@ -80,15 +81,6 @@ h2 {
 
 
 // ***************** media *****************
-@media only screen and (min-width: 1800px) {
-  .welcome-section {
-    .card-area {
-      .welcome-card {
-        max-width: 420px;
-      }
-    }
-  }
-}
 
 @media only screen and (max-width: 1600px) {
   .welcome-section {
@@ -102,12 +94,47 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 1300px) {
+  .welcome-section {
+    .card-area {
+      .welcome-card {
+        max-width: 300px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .welcome-section {
+    .card-area {
+        .welcome-card {
+          margin: 30px 0;
+          max-width: 270px;
+          .welcome-card__caption {
+            margin-bottom: 18px;
+              h3{
+                font-size: 20px;
+              }
+          .welcome-card__text {
+            p  {
+              font-size: 16px;
+            }
+          }
+          }
+        }
+    }
+  }
+}
+
 @media only screen and (max-width: 992px) {
   .big-center-text {
-    font-size: 32px;
+    font-size: 30px;
   }
   .welcome-section {
     margin: 50px 0;
+    .card-area {
+      margin-top: 40px;
+    }
   }
 }
 

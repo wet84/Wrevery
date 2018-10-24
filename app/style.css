@@ -123,12 +123,13 @@ body {
 .start-section {
   background: transparent url("./img/min-bgimg-top.png") no-repeat;
   height: 1080px;
+  height: 100vh;
   position: relative;
   overflow: hidden; }
   .start-section .main-image-block {
     position: absolute;
     background: url("./img/main-img-text.png") no-repeat;
-    height: 1000px;
+    height: 100vh;
     width: 81%;
     top: -25px;
     right: -100px;
@@ -148,8 +149,8 @@ body {
   .start-section .social-link-block {
     display: inline-block;
     position: absolute;
-    top: 905px;
-    left: 118px; }
+    left: 118px;
+    bottom: 20px; }
     .start-section .social-link-block a {
       display: inline-block;
       width: 45px;
@@ -214,11 +215,46 @@ body {
     top: 85%;
     left: -1.5%; }
 
+@media only screen and (max-width: 1800px) {
+  .start-section .main-image-block {
+    height: 100vh; } }
+
+@media only screen and (max-width: 1600px) {
+  .start-section .main-image-block .main-image-text {
+    top: 27%; }
+  .start-section .icons .think-icon {
+    left: 25%; }
+  .start-section .icons .key-icon {
+    top: 83%;
+    right: 43%; }
+  .start-section .icons .conversation-icon {
+    top: 81%; }
+  .start-section .icons .computer-icon {
+    top: 60%;
+    right: 1%; }
+  .start-section .icons .handshake-icon {
+    top: 11%;
+    left: 23%; } }
+
 @media only screen and (max-width: 1400px) {
+  .start-section .icons .think-icon {
+    left: 15%; }
   .start-section .main-image-block {
     right: 0px; } }
 
 @media only screen and (max-width: 1300px) {
+  .start-section .icons .key-icon {
+    top: 83%;
+    right: 53%; }
+  .start-section .icons .think-icon {
+    left: 4%;
+    top: 45%; }
+  .start-section .icons .handshake-icon {
+    top: 13%;
+    left: 10%; }
+  .start-section .icons .puzzle-icon {
+    top: 82%;
+    left: 20%; }
   .start-section .main-image-block {
     width: 92%;
     background-position: -10% 100%; }
@@ -238,11 +274,22 @@ body {
   .start-section .social-link-block {
     left: 55px; } }
 
+@media only screen and (max-width: 992px) {
+  .start-section .main-image-block .main-image-text {
+    top: 24%;
+    left: 20%; } }
+
+@media only screen and (max-width: 860px) {
+  .start-section .main-image-block .main-image-text {
+    top: 16%; } }
+
 @media only screen and (max-width: 650px) {
   .start-section {
     height: 750px; }
     .start-section .main-image-block {
       background-position: 100% 20%; }
+      .start-section .main-image-block .main-image-text {
+        top: 26%; }
     .start-section .text-block {
       left: 25px;
       width: 90%;
@@ -256,6 +303,10 @@ body {
         width: 25px;
         height: 25px;
         margin-right: 10px; } }
+
+@media only screen and (max-width: 576px) {
+  .start-section .main-image-block .main-image-text {
+    top: 23%; } }
 
 .caption {
   display: inline-block; }
@@ -277,40 +328,38 @@ h2 {
 
 .welcome-section {
   margin: 100px 200px 230px 200px; }
-  .welcome-section .card-area .welcome-card {
-    max-width: 340px;
-    margin: 0 20px 30px 20px; }
-    .welcome-section .card-area .welcome-card .welcome-card__img {
-      height: 160px; }
-      .welcome-section .card-area .welcome-card .welcome-card__img .img-circle {
-        height: 110px;
-        width: 110px;
-        border-radius: 50%;
-        box-shadow: 0px 10px 29px -9px rgba(0, 0, 0, 0.75); }
-    .welcome-section .card-area .welcome-card .welcome-card__caption {
-      margin-bottom: 28px; }
-      .welcome-section .card-area .welcome-card .welcome-card__caption h3 {
-        color: #263238;
-        font-size: 26px; }
-    .welcome-section .card-area .welcome-card .welcome-card__text p {
-      color: #546e7a;
-      font-size: 20px; }
-  .welcome-section .card-area .welcome-card.flexibility .welcome-card__img {
-    background: url("./img/bg-card-blue.png") 50% 50% no-repeat; }
-    .welcome-section .card-area .welcome-card.flexibility .welcome-card__img .img-circle {
-      background: #fff url("./img/welcome-blue.svg") 50% 50%/60% no-repeat; }
-  .welcome-section .card-area .welcome-card.smart .welcome-card__img {
-    background: url("./img/bg-card-red.png") 50% 50% no-repeat; }
-    .welcome-section .card-area .welcome-card.smart .welcome-card__img .img-circle {
-      background: #fff url("./img/welcome-red.svg") 50% 50%/60% no-repeat; }
-  .welcome-section .card-area .welcome-card.resolute-approach .welcome-card__img {
-    background: url("./img/bg-card-green.png") 50% 50% no-repeat; }
-    .welcome-section .card-area .welcome-card.resolute-approach .welcome-card__img .img-circle {
-      background: #fff url("./img/welcome-green.svg") 50% 50%/60% no-repeat; }
-
-@media only screen and (min-width: 1800px) {
-  .welcome-section .card-area .welcome-card {
-    max-width: 420px; } }
+  .welcome-section .card-area {
+    margin-top: 140px; }
+    .welcome-section .card-area .welcome-card {
+      max-width: 340px;
+      margin: 0 20px 30px 20px; }
+      .welcome-section .card-area .welcome-card .welcome-card__img {
+        height: 160px; }
+        .welcome-section .card-area .welcome-card .welcome-card__img .img-circle {
+          height: 110px;
+          width: 110px;
+          border-radius: 50%;
+          box-shadow: 0px 10px 29px -9px rgba(0, 0, 0, 0.75); }
+      .welcome-section .card-area .welcome-card .welcome-card__caption {
+        margin-bottom: 28px; }
+        .welcome-section .card-area .welcome-card .welcome-card__caption h3 {
+          color: #263238;
+          font-size: 26px; }
+      .welcome-section .card-area .welcome-card .welcome-card__text p {
+        color: #546e7a;
+        font-size: 20px; }
+    .welcome-section .card-area .welcome-card.flexibility .welcome-card__img {
+      background: url("./img/bg-card-blue.png") 50% 50% no-repeat; }
+      .welcome-section .card-area .welcome-card.flexibility .welcome-card__img .img-circle {
+        background: #fff url("./img/welcome-blue.svg") 50% 50%/60% no-repeat; }
+    .welcome-section .card-area .welcome-card.smart .welcome-card__img {
+      background: url("./img/bg-card-red.png") 50% 50% no-repeat; }
+      .welcome-section .card-area .welcome-card.smart .welcome-card__img .img-circle {
+        background: #fff url("./img/welcome-red.svg") 50% 50%/60% no-repeat; }
+    .welcome-section .card-area .welcome-card.resolute-approach .welcome-card__img {
+      background: url("./img/bg-card-green.png") 50% 50% no-repeat; }
+      .welcome-section .card-area .welcome-card.resolute-approach .welcome-card__img .img-circle {
+        background: #fff url("./img/welcome-green.svg") 50% 50%/60% no-repeat; }
 
 @media only screen and (max-width: 1600px) {
   .welcome-section {
@@ -320,11 +369,28 @@ h2 {
   .welcome-section {
     margin: 100px 50px 230px 50px; } }
 
+@media only screen and (max-width: 1300px) {
+  .welcome-section .card-area .welcome-card {
+    max-width: 300px; } }
+
+@media only screen and (max-width: 1200px) {
+  .welcome-section .card-area .welcome-card {
+    margin: 30px 0;
+    max-width: 270px; }
+    .welcome-section .card-area .welcome-card .welcome-card__caption {
+      margin-bottom: 18px; }
+      .welcome-section .card-area .welcome-card .welcome-card__caption h3 {
+        font-size: 20px; }
+      .welcome-section .card-area .welcome-card .welcome-card__caption .welcome-card__text p {
+        font-size: 16px; } }
+
 @media only screen and (max-width: 992px) {
   .big-center-text {
-    font-size: 32px; }
+    font-size: 30px; }
   .welcome-section {
-    margin: 50px 0; } }
+    margin: 50px 0; }
+    .welcome-section .card-area {
+      margin-top: 40px; } }
 
 @media only screen and (max-width: 576px) {
   .welcome-section .card-area {
@@ -656,7 +722,7 @@ h2 {
   .contact-section .contact-section-content {
     margin: 230px 200px; }
     .contact-section .contact-section-content .contact-text {
-      font-size: 20px;
+      font-size: 18px;
       color: #546e7a; }
       .contact-section .contact-section-content .contact-text p {
         margin: 40px 0; }
@@ -689,7 +755,7 @@ h2 {
 
 @media only screen and (max-width: 1300px) {
   .contact-section .contact-section-content .contact-text {
-    font-size: 18px; }
+    font-size: 17px; }
     .contact-section .contact-section-content .contact-text p i {
       margin-right: 10px; } }
 

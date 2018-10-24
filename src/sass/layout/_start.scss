@@ -6,19 +6,28 @@ body {
 .start-section {
     background: transparent url('./img/min-bgimg-top.png') no-repeat;
     height: 1080px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 
   .main-image-block {
     position: absolute;
-    // background: url('../img/img-top.png') no-repeat;
+    // background: url('./img/start-page-bg-people.png') no-repeat;
     background: url('./img/main-img-text.png') no-repeat;
-    height: 1000px;
+    // height: 920px;
+    height: 100vh;
     width: 81%;
     top: -25px;
     right: -100px;
     background-position: -20% 100%;
     background-size: cover;
+    // .main-image-text {
+    //   color: #fff;
+    //   font-size: 5vw;
+    //   position: absolute;
+    //   top: 17%;
+    //   left: 24%;
+    // }
   }
   
   .text-block {
@@ -38,8 +47,9 @@ body {
   .social-link-block {
     display: inline-block;
     position: absolute;
-    top: 905px;
+    // top: 905px;
     left: 118px;
+    bottom:20px;
     a {
       display: inline-block;
       width: 45px;
@@ -124,8 +134,52 @@ body {
 }
 
 // ***************** media *****************
+
+@media only screen and (max-width: 1800px) {
+  .start-section {
+    .main-image-block {
+      height: 100vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .start-section {
+    .main-image-block {
+      .main-image-text {
+       top: 27%;
+      }
+    }
+    .icons {
+      .think-icon {
+        left: 25%;
+      }
+      .key-icon {
+        top: 83%;
+        right: 43%;
+      }
+      .conversation-icon {
+        top: 81%;
+      }
+      .computer-icon {
+        top: 60%;
+        right: 1%;
+      }
+      .handshake-icon {
+        top: 11%;
+        left: 23%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .start-section {
+    .icons {
+      .think-icon {
+        left: 15%;
+      }
+    }
     .main-image-block {
       right: 0px;
     }
@@ -134,8 +188,28 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .start-section {
+    // height: 1080px;
+    .icons {
+      .key-icon {
+        top: 83%;
+        right: 53%;
+      }
+      .think-icon {
+        left: 4%;
+        top: 45%;
+      }
+      .handshake-icon {
+        top: 13%;
+        left: 10%;
+      }
+      .puzzle-icon {
+        top: 82%;
+        left: 20%;
+      }
+    }
     .main-image-block {
       width: 92%;
+      // height: 1000px;
       background-position: -10% 100%;
     }
     .text-block {
@@ -166,12 +240,35 @@ body {
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .start-section {
+    .main-image-block {
+      .main-image-text {
+       top: 24%;
+       left: 20%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .start-section {
+    .main-image-block {
+      .main-image-text {
+       top: 16%;
+      }
+    }
+  }
+}
 
 @media only screen and (max-width: 650px) {
   .start-section {
     height: 750px;
     .main-image-block {
       background-position: 100% 20%;
+      .main-image-text {
+        top: 26%;
+      }
     }
     .text-block {
       left: 25px;
@@ -187,6 +284,17 @@ body {
         width: 25px;
         height: 25px;
         margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 576px) {
+  .start-section {
+    .main-image-block {
+      .main-image-text {
+       top: 23%;
       }
     }
   }
