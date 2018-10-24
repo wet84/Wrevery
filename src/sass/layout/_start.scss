@@ -12,22 +12,20 @@ body {
 
   .main-image-block {
     position: absolute;
-    // background: url('./img/start-page-bg-people.png') no-repeat;
-    background: url('./img/main-img-text.png') no-repeat;
-    // height: 920px;
+    background: url('./img/start-page-bg-people.png') no-repeat;
     height: 100vh;
     width: 81%;
     top: -25px;
     right: -100px;
     background-position: -20% 100%;
     background-size: cover;
-    // .main-image-text {
-    //   color: #fff;
-    //   font-size: 5vw;
-    //   position: absolute;
-    //   top: 17%;
-    //   left: 24%;
-    // }
+    .main-image-text {
+      color: #fff;
+      font-size: 5vw;
+      position: absolute;
+      top: 17%;
+      left: 24%;
+    }
   }
   
   .text-block {
@@ -47,7 +45,6 @@ body {
   .social-link-block {
     display: inline-block;
     position: absolute;
-    // top: 905px;
     left: 118px;
     bottom:20px;
     a {
@@ -135,14 +132,6 @@ body {
 
 // ***************** media *****************
 
-@media only screen and (max-width: 1800px) {
-  .start-section {
-    .main-image-block {
-      height: 100vh;
-    }
-  }
-}
-
 @media only screen and (max-width: 1600px) {
   .start-section {
     .main-image-block {
@@ -188,7 +177,6 @@ body {
 
 @media only screen and (max-width: 1300px) {
   .start-section {
-    // height: 1080px;
     .icons {
       .key-icon {
         top: 83%;
@@ -209,7 +197,6 @@ body {
     }
     .main-image-block {
       width: 92%;
-      // height: 1000px;
       background-position: -10% 100%;
     }
     .text-block {
@@ -289,12 +276,39 @@ body {
   }
 }
 
-
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 375px) {
   .start-section {
     .main-image-block {
+      background-position: 100% 27%;
+    }
+  }
+}
+
+@media only screen and (max-height: 768px) {
+  .start-section {
+    .text-block {
+      top: 580px;
+    }
+  }
+}
+
+@media only screen and (max-height: 420px) {
+  .start-section {
+    .header {
+      .main-nav {
+        .menu {
+          .menu__icon {
+            span {
+              background: #fff;
+            } 
+          }
+        }
+      } 
+    } 
+    .main-image-block {
       .main-image-text {
-       top: 23%;
+        left: 58%;
+        top: 28%;
       }
     }
   }

@@ -96,3 +96,21 @@
     }
   }
 }
+
+
+@media only screen and (max-width: 576px) {
+  .contact-section {
+    .contact-section-content {
+      .contact-text {
+        font-size: 14px;
+         p {
+          i {
+            width: 23px;
+            height: 23px;
+            margin-right: 5px;
+         }
+        }
+      }
+    }
+  }
+}
