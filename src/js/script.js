@@ -7,8 +7,15 @@ $(document).ready(function() {
   $('.menu__links-item').on('click', function() {
     $(this).closest('.menu').removeClass('menu_state_open');
   });
-
+//scroll for main menu
   $(".menu__links").on("click","a", function (event) {
+    event.preventDefault();
+    var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+    $('body,html').animate({scrollTop: top}, 1500);
+  });
+//scroll for footer links
+  $(".footer-links").on("click","a", function (event) {
     event.preventDefault();
     var id  = $(this).attr('href'),
         top = $(id).offset().top;
@@ -66,5 +73,16 @@ $(document).ready(function() {
       $('.dynamic-text').html(serviceText.copywriting);
     }
   });
+
+  // init google maps
+  // function initMap() {
+  //   var coordinates = {lat: 48.458917, lng: 35.051833},
+    
+  //   map = new google.maps.Map(document.getElementById('map'), {
+  //     center: coordinates,
+  //     zoom: 4
+  //   });
+  // };
+  // initMap();
 });
 

@@ -13,7 +13,7 @@
 </head>
 <body>
   <!-- start section -->
-  <div class="start-section">
+  <div class="start-section" id="startPage">
     <div class="main-image-block">
       <div class="main-image-text">
         We are very...
@@ -355,18 +355,16 @@
               Как нас найти:
             </p>
             <div class="contact-text">
-              <p class="d-flex flex-wrap align-items-center"><i class="adress-icon"></i> <span>Адресс:&nbsp;</span> ул. Шевченко 37, Днепр 49000,
+              <p class="d-flex flex-wrap align-items-center"><i class="adress-icon"></i><span>Адресс:&nbsp;</span> ул. Шевченко 37, Днепр 49000,
                 Украина</p>
-              <p class="d-flex flex-wrap align-items-center"><i class="tel-icon"></i><span>Телефон:&nbsp;</span>
-                <a href="tel:+380675635155">+38(067)5635155</a>,&nbsp; 
-                <a href="tel:+420774279446">+42(077)4279446</a></p>
-              <p class="d-flex flex-wrap align-items-center"><i class="email-icon"></i><span>Email:&nbsp;</span><a href="mailto:Wrevery@gmail.com">Wrevery@gmail.com</a></p>
+              <p class="d-flex flex-wrap align-items-center"><i class="tel-icon"></i><span>Телефон:&nbsp;</span><a href="tel:+380675635155">+38(067)5635155</a>
+              <p class="d-flex flex-wrap align-items-center"><i class="email-icon"></i><span>Email:&nbsp;</span><a href="mailto:info@wrevery.com">info@wrevery.com</a></p>
             </div>
           </div>
           <div class="col-md-12 col-lg-6 col-xl-7">
-            <div class="map-area">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.880409431405!2d35.05055118055493!3d48.45882407054198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2d9670a8aff%3A0xdef8a1177e9b0fc6!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMzcsINCU0L3QuNC_0YDQviwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1540284636222"
-                width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <div class="map-area" id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2645.8752177510864!2d35.049671415998056!3d48.45892367925043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2d9670a8aff%3A0xdef8a1177e9b0fc6!2z0YPQuy4g0KjQtdCy0YfQtdC90LrQviwgMzcsINCU0L3QuNC_0YDQviwg0JTQvdC10L_RgNC-0L_QtdGC0YDQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsIDQ5MDAw!5e0!3m2!1sru!2sua!4v1540459890781" 
+              width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -382,15 +380,12 @@
             <div class="footer-logo"></div>
             <div class="contact-text">
               <p class="d-flex flex-wrap align-items-center">
-                Адресс: ул. Шевченко 37,
-                Днепр 49000,
-                Украина</p>
+                <span>Адресс:&nbsp;</span> ул. Шевченко 37, Днепр 49000, Украина</p>
               <p class="d-flex flex-wrap align-items-center">
-                <span>Телефон:</span>
-                <a href="tel:+380675635155">+38(067)5635155</a>,
-                <a href="tel:+420774279446">+42(077)4279446</a></p>
+                <span>Телефон:&nbsp;</span>
+                <a href="tel:+380675635155">+38(067)5635155</a>
               <p class="d-flex flex-wrap align-items-center">
-                <span>Email:</span><a href="mailto:Wrevery@gmail.com">Wrevery@gmail.com</a></p>
+                <span>Email:&nbsp;</span><a href="mailto:info@wrevery.com">info@wrevery.com</a></p>
             </div>
           </div>
           <div class="col-6 col-md-4 col-lg-2">
@@ -406,12 +401,12 @@
           </div>
           <div class="col-6 col-md-3 col-lg-2">
               <div class="footer-caption">Ссылки</div>
-              <ul>
-                <li><a href="javascript:void(0)">Главная</a></li>
-                <li><a href="javascript:void(0)">О нас</a></li>
-                <li><a href="javascript:void(0)">Сервиисы</a></li>
-                <li><a href="javascript:void(0)">Портфолио</a></li>
-                <li><a href="javascript:void(0)">Контакты</a></li>
+              <ul class="footer-links">
+                <li><a href="#startPage">Главная</a></li>
+                <li><a href="#aboutUs">О нас</a></li>
+                <li><a href="#services">Сервисы</a></li>
+                <li><a href="#ourProject">Портфолио</a></li>
+                <li><a href="#contact">Контакты</a></li>
               </ul>
           </div>
           <div class="col-12 col-md-5 col-lg-4">
@@ -427,13 +422,14 @@
         </div>
         <div class="row">
           <div class="col copywriting-block text-center">
-            <p>Copyright 2018, Design by <a href="javascript:void(0)">Jay Mikhaylin</a></p>
+            <p>Copyright 2018, <a href="#startPage">Wrevery</a></p>
           </div>
         </div>
       </div>
     </div>
   </footer>
 </body>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1zs0UkxkrWgKaEXF7ez_4LsOM_wxDugI"></script> -->
 <script src="./libs/jquery-3.3.1.min.js"></script>
 <script src="./libs/bootstrap.min.js"></script>
 <script src="./libs/slick/slick/slick.min.js"></script>

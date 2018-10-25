@@ -132,6 +132,105 @@ body {
 
 // ***************** media *****************
 
+//for retina
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .icons{
+    .handshake-icon {
+      width: 60px;
+      height: 60px;
+    }
+    .communication-icon {
+      width: 52px;
+      height: 52px;
+    }
+    .think-icon {
+      width: 52px;
+      height: 52px;
+    }
+    .computer-icon {
+      width: 42px;
+      height: 42px;
+    }
+    .conversation-icon {
+      width: 37px;
+      height: 37px;
+    }
+    .key-icon {
+      width: 47px;
+      height: 47px;
+    }
+    .puzzle-icon {
+      width: 36px;
+      height: 36px;
+    }
+    .society-icon {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
+
+@media only screen and (min-width: 2048px) and (min-height: 1152px) {
+  .start-section {
+    .icons {
+      .think-icon {
+        top: 42%;
+        left: 24%;
+      }
+      .key-icon {
+        top: 84%;
+        right: 46%;
+      }
+      .conversation-icon {
+        top: 77%;
+        right: 4%;
+      }
+      .computer-icon {
+        right: 3%;
+      }
+      .handshake-icon {
+        top: 8%;
+        left: 29%;
+      }
+      .society-icon {
+        top: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) and (min-height: 1200px) {
+  .start-section {
+    .icons {
+      .think-icon {
+        top: 49%;
+        left: 25%;
+      }
+      .key-icon {
+        top: 84%;
+        right: 45%;
+      }
+      .conversation-icon {
+        top: 79%;
+        right: 3%;
+      }
+      .computer-icon {
+        right: 2%;
+      }
+      .handshake-icon {
+        top: 6%;
+        left: 35%;
+      }
+      .society-icon {
+        top: 90%;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 1600px) {
   .start-section {
     .main-image-block {
@@ -170,7 +269,7 @@ body {
       }
     }
     .main-image-block {
-      right: -10px;
+      right: -10%;
     }
   }
 }

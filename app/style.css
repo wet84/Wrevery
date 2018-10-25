@@ -221,6 +221,68 @@ body {
     top: 85%;
     left: -1.5%; }
 
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .icons .handshake-icon {
+    width: 60px;
+    height: 60px; }
+  .icons .communication-icon {
+    width: 52px;
+    height: 52px; }
+  .icons .think-icon {
+    width: 52px;
+    height: 52px; }
+  .icons .computer-icon {
+    width: 42px;
+    height: 42px; }
+  .icons .conversation-icon {
+    width: 37px;
+    height: 37px; }
+  .icons .key-icon {
+    width: 47px;
+    height: 47px; }
+  .icons .puzzle-icon {
+    width: 36px;
+    height: 36px; }
+  .icons .society-icon {
+    width: 55px;
+    height: 55px; } }
+
+@media only screen and (min-width: 2048px) and (min-height: 1152px) {
+  .start-section .icons .think-icon {
+    top: 42%;
+    left: 24%; }
+  .start-section .icons .key-icon {
+    top: 84%;
+    right: 46%; }
+  .start-section .icons .conversation-icon {
+    top: 77%;
+    right: 4%; }
+  .start-section .icons .computer-icon {
+    right: 3%; }
+  .start-section .icons .handshake-icon {
+    top: 8%;
+    left: 29%; }
+  .start-section .icons .society-icon {
+    top: 90%; } }
+
+@media only screen and (min-width: 1920px) and (min-height: 1200px) {
+  .start-section .icons .think-icon {
+    top: 49%;
+    left: 25%; }
+  .start-section .icons .key-icon {
+    top: 84%;
+    right: 45%; }
+  .start-section .icons .conversation-icon {
+    top: 79%;
+    right: 3%; }
+  .start-section .icons .computer-icon {
+    right: 2%; }
+  .start-section .icons .handshake-icon {
+    top: 6%;
+    left: 35%; }
+  .start-section .icons .society-icon {
+    top: 90%; } }
+
 @media only screen and (max-width: 1600px) {
   .start-section .main-image-block .main-image-text {
     top: 27%; }
@@ -242,7 +304,7 @@ body {
   .start-section .icons .think-icon {
     left: 15%; }
   .start-section .main-image-block {
-    right: -10px; } }
+    right: -10%; } }
 
 @media only screen and (max-width: 1300px) {
   .start-section .icons .key-icon {
