@@ -242,7 +242,7 @@ body {
   .start-section .icons .think-icon {
     left: 15%; }
   .start-section .main-image-block {
-    right: 0px; } }
+    right: -10px; } }
 
 @media only screen and (max-width: 1300px) {
   .start-section .icons .key-icon {
