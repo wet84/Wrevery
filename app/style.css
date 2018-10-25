@@ -122,7 +122,6 @@ body {
 
 .start-section {
   background: transparent url("./img/min-bgimg-top.png") no-repeat;
-  height: 1080px;
   height: 100vh;
   position: relative;
   overflow: hidden; }
@@ -130,10 +129,10 @@ body {
     position: absolute;
     background: url("./img/start-page-bg-people.png") no-repeat;
     height: 100vh;
-    width: 81%;
-    top: -25px;
-    right: -100px;
-    background-position: -20% 100%;
+    width: 78%;
+    top: -2%;
+    right: -7%;
+    background-position: 0% 100%;
     background-size: cover; }
     .start-section .main-image-block .main-image-text {
       color: #fff;
@@ -148,15 +147,15 @@ body {
     font-style: italic;
     line-height: 1.2;
     position: absolute;
-    top: 70%;
-    left: 118px; }
+    bottom: 34%;
+    left: 6%; }
     .start-section .text-block p {
       color: #37474f; }
   .start-section .social-link-block {
     display: inline-block;
     position: absolute;
-    left: 118px;
-    bottom: 20px; }
+    bottom: 5%;
+    left: 6%; }
     .start-section .social-link-block a {
       display: inline-block;
       width: 45px;
@@ -176,7 +175,7 @@ body {
     background: url("./img/handshake.svg") no-repeat;
     width: 120px;
     height: 120px;
-    top: 4%;
+    top: 9%;
     left: 26%; }
   .start-section .icons .communication-icon {
     background: url("./img/communication.svg") no-repeat;
@@ -189,31 +188,31 @@ body {
     width: 95px;
     height: 95px;
     top: 40%;
-    left: 29%; }
+    left: 32%; }
   .start-section .icons .computer-icon {
     background: url("./img/computer.svg") no-repeat;
     width: 85px;
     height: 85px;
-    top: 52%;
-    right: 5%; }
+    top: 51%;
+    right: 2%; }
   .start-section .icons .conversation-icon {
     background: url("./img/conversation.svg") no-repeat;
     width: 75px;
     height: 75px;
-    top: 70%;
-    right: 2%; }
+    top: 75%;
+    right: 1%; }
   .start-section .icons .key-icon {
     background: url("./img/key.svg") no-repeat;
     width: 95px;
     height: 95px;
-    top: 75%;
-    right: 44%; }
+    top: 83%;
+    right: 42%; }
   .start-section .icons .puzzle-icon {
     background: url("../img/puzzle.svg") no-repeat;
     width: 73px;
     height: 73px;
-    top: 80%;
-    left: 31%; }
+    top: 79%;
+    left: 36%; }
   .start-section .icons .society-icon {
     background: url("./img/society.svg") no-repeat;
     width: 110px;
@@ -222,63 +221,63 @@ body {
     left: -1.5%; }
 
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-  .icons .handshake-icon {
+  .start-section .icons .handshake-icon {
     width: 60px;
     height: 60px; }
-  .icons .communication-icon {
+  .start-section .icons .communication-icon {
     width: 52px;
     height: 52px; }
-  .icons .think-icon {
+  .start-section .icons .think-icon {
     width: 52px;
     height: 52px; }
-  .icons .computer-icon {
+  .start-section .icons .computer-icon {
     width: 42px;
     height: 42px; }
-  .icons .conversation-icon {
+  .start-section .icons .conversation-icon {
     width: 37px;
     height: 37px; }
-  .icons .key-icon {
+  .start-section .icons .key-icon {
     width: 47px;
     height: 47px; }
-  .icons .puzzle-icon {
+  .start-section .icons .puzzle-icon {
     width: 36px;
     height: 36px; }
-  .icons .society-icon {
+  .start-section .icons .society-icon {
     width: 55px;
     height: 55px; } }
 
 @media only screen and (min-width: 2048px) and (min-height: 1152px) {
   .start-section .icons .think-icon {
-    top: 42%;
-    left: 24%; }
+    top: 44%;
+    left: 29%; }
   .start-section .icons .key-icon {
-    top: 84%;
-    right: 46%; }
+    right: 41%; }
   .start-section .icons .conversation-icon {
     top: 77%;
     right: 4%; }
   .start-section .icons .computer-icon {
-    right: 3%; }
+    right: 1%; }
   .start-section .icons .handshake-icon {
-    top: 8%;
-    left: 29%; }
+    left: 32%; }
   .start-section .icons .society-icon {
     top: 90%; } }
 
 @media only screen and (min-width: 1920px) and (min-height: 1200px) {
+  .start-section .main-image-block {
+    width: 80%; }
   .start-section .icons .think-icon {
-    top: 49%;
-    left: 25%; }
+    top: 48%;
+    left: 29%; }
   .start-section .icons .key-icon {
-    top: 84%;
-    right: 45%; }
+    top: 85%;
+    right: 42%; }
   .start-section .icons .conversation-icon {
-    top: 79%;
-    right: 3%; }
-  .start-section .icons .computer-icon {
+    top: 80%;
     right: 2%; }
+  .start-section .icons .computer-icon {
+    top: 60%;
+    right: 1%; }
   .start-section .icons .handshake-icon {
-    top: 6%;
     left: 35%; }
   .start-section .icons .society-icon {
     top: 90%; } }
@@ -301,21 +300,28 @@ body {
     left: 23%; } }
 
 @media only screen and (max-width: 1400px) {
+  .start-section .icons .handshake-icon {
+    top: 10%;
+    left: 30%; }
   .start-section .icons .think-icon {
-    left: 15%; }
+    left: 28%;
+    top: 52%; }
+  .start-section .icons .key-icon {
+    top: 83%;
+    right: 40%; }
   .start-section .main-image-block {
-    right: -10%; } }
+    right: -5%; } }
 
 @media only screen and (max-width: 1300px) {
   .start-section .icons .key-icon {
     top: 83%;
-    right: 53%; }
+    right: 45%; }
   .start-section .icons .think-icon {
-    left: 4%;
-    top: 45%; }
+    left: 21%;
+    top: 52%; }
   .start-section .icons .handshake-icon {
-    top: 13%;
-    left: 10%; }
+    top: 11%;
+    left: 23%; }
   .start-section .icons .puzzle-icon {
     top: 82%;
     left: 20%; }
