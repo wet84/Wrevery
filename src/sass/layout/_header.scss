@@ -183,3 +183,16 @@
     }
   }
 }
+
+@media only screen and (max-height: 900px) {
+  .start-section {
+    .header {
+      margin: 25px 0;
+      .logo {
+        width: 240px;
+        height: 50px;
+        background-size: contain;
+      }
+    }
+  }
+}

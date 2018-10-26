@@ -29,6 +29,48 @@ body {
       top: 17%;
       left: 24%;
     }
+    .main-image-block-icons {
+      .handshake-icon {
+        background: url('./img/handshake.svg') no-repeat;
+        width: 120px;
+        height: 120px;
+        top: 9%;
+        left: -2%;
+        position: absolute;
+      }
+      .think-icon {
+        background: url('./img/think.svg') no-repeat;
+        width: 95px;
+        height: 95px;
+        top: 40%;
+        left: 2%;
+        position: absolute;
+      }
+      .computer-icon {
+        background: url('./img/computer.svg') no-repeat;
+        width: 85px;
+        height: 85px;
+        top: 51%;
+        right: 11%;
+        position: absolute;
+      }
+      .conversation-icon {
+        background: url('./img/conversation.svg') no-repeat;
+        width: 75px;
+        height: 75px;
+        top: 77%;
+        right: 10%;
+        position: absolute;
+      }
+      .key-icon {
+        background: url('./img/key.svg') no-repeat;
+        width: 95px;
+        height: 95px;
+        top: 83%;
+        right: 61%;
+        position: absolute;
+      }
+    }
   }
   
   .text-block {
@@ -78,13 +120,13 @@ body {
     .icon {
       position: absolute;
     }
-    .handshake-icon {
-      background: url('./img/handshake.svg') no-repeat;
-      width: 120px;
-      height: 120px;
-      top: 9%;
-      left: 26%;
-    }
+    // .handshake-icon {
+    //   background: url('./img/handshake.svg') no-repeat;
+    //   width: 120px;
+    //   height: 120px;
+    //   top: 9%;
+    //   left: 26%;
+    // }
     .communication-icon {
       background: url('./img/communication.svg') no-repeat;
       width: 95px;
@@ -92,34 +134,34 @@ body {
       top: 20%;
       left: 1%;
     }
-    .think-icon {
-      background: url('./img/think.svg') no-repeat;
-      width: 95px;
-      height: 95px;
-      top: 40%;
-      left: 32%;
-    }
-    .computer-icon {
-      background: url('./img/computer.svg') no-repeat;
-      width: 85px;
-      height: 85px;
-      top: 51%;
-      right: 2%;
-    }
-    .conversation-icon {
-      background: url('./img/conversation.svg') no-repeat;
-      width: 75px;
-      height: 75px;
-      top: 75%;
-      right: 1%;
-    }
-    .key-icon {
-      background: url('./img/key.svg') no-repeat;
-      width: 95px;
-      height: 95px;
-      top: 83%;
-      right: 42%;
-    }
+    // .think-icon {
+    //   background: url('./img/think.svg') no-repeat;
+    //   width: 95px;
+    //   height: 95px;
+    //   top: 40%;
+    //   left: 32%;
+    // }
+    // .computer-icon {
+    //   background: url('./img/computer.svg') no-repeat;
+    //   width: 85px;
+    //   height: 85px;
+    //   top: 51%;
+    //   right: 2%;
+    // }
+    // .conversation-icon {
+    //   background: url('./img/conversation.svg') no-repeat;
+    //   width: 75px;
+    //   height: 75px;
+    //   top: 75%;
+    //   right: 1%;
+    // }
+    // .key-icon {
+    //   background: url('./img/key.svg') no-repeat;
+    //   width: 95px;
+    //   height: 95px;
+    //   top: 83%;
+    //   right: 42%;
+    // }
     .puzzle-icon {
       background: url('../img/puzzle.svg') no-repeat;
       width: 73px;
@@ -139,109 +181,272 @@ body {
 
 // ***************** media *****************
 
+@media only screen and (min-width: 2048px) and (min-height: 1152px) {
+
+}
+// @media only screen and (max-height: 2000px) {
+//   .start-section {
+//     .main-image-block {
+//       width: 89%;
+//       top: -2%;
+//       right: -2%;
+//       .main-image-text {
+//         top: 21%;
+//       }
+//       .main-image-block-icons {
+//         .think-icon {
+//           top: 53%;
+//         }
+//         .handshake-icon {
+//           left: 15%;
+//         }
+//         .computer-icon {
+//           top: 62%;
+//           right: 10%;
+//         }
+//         .key-icon {
+//           top: 86%;
+//         }
+//         .conversation-icon {
+//           top: 82%;
+//         }
+//       }
+//     }
+//     .icons {
+//       .puzzle-icon {
+//         left: 27%;
+//       }
+//     }
+//   }
+// }
+
+@media only screen and (min-height: 1500px) {
+  .start-section {
+    .main-image-block {
+      width: 93%;
+      .main-image-text {
+        top: 21%;
+      }
+      .main-image-block-icons {
+        .think-icon {
+          top: 53%;
+        }
+        .handshake-icon {
+          left: 15%;
+        }
+        .computer-icon {
+          top: 62%;
+          right: 6%;
+        }
+        .key-icon {
+          top: 88%;
+        }
+        .conversation-icon {
+          top: 82%;
+          right: 6%;
+        }
+      }
+    }
+    .icons {
+      .puzzle-icon {
+        left: 27%;
+      }
+    }
+  }
+}
+
+
+@media only screen and (min-height: 1200px) {
+  .start-section {
+    .main-image-block {
+      width: 80%;
+      .main-image-text {
+        top: 21%;
+      }
+      .main-image-block-icons {
+        .think-icon {
+          top: 52%;
+        }
+        .handshake-icon {
+          left: 8%;
+        }
+        .computer-icon {
+          top: 61%;
+          right: 11%;
+        }
+        .key-icon {
+          top: 86%;
+        }
+        .conversation-icon {
+          top: 83%;
+          right: 11%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-height: 1080px) {
+  .start-section {
+    .main-image-block {
+      width: 84%;
+      .main-image-text {
+        top: 21%;
+      }
+      .main-image-block-icons {
+        .think-icon {
+          top: 50%;
+        }
+        .handshake-icon {
+          left: 8%;
+        }
+        .computer-icon {
+          right: 9%;
+        }
+        .key-icon {
+          top: 86%;
+          right: 61%;
+        }
+        .conversation-icon {
+          top: 82%;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-height: 900px) {
+  .start-section {
+    .main-image-block {
+      width: 86%;
+      .main-image-block-icons {
+        .think-icon {
+          top: 50%;
+        }
+        .handshake-icon {
+          left: 2%;
+        }
+        .computer-icon {
+          top: 56%;
+        }
+        .key-icon {
+          right: 59%;
+        }
+        .conversation-icon {
+          right: 9%;
+        }
+        .puzzle-icon {
+          left: 31%;
+        }
+      }
+    }
+    .text-block {
+      bottom: 18%;
+    }
+  }
+}
+
 //for retina
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (-o-min-device-pixel-ratio: 3/2),
 only screen and (min-device-pixel-ratio: 1.5) {
-  .start-section {
-    .icons{
-      .handshake-icon {
-        width: 60px;
-        height: 60px;
-      }
-      .communication-icon {
-        width: 52px;
-        height: 52px;
-      }
-      .think-icon {
-        width: 52px;
-        height: 52px;
-      }
-      .computer-icon {
-        width: 42px;
-        height: 42px;
-      }
-      .conversation-icon {
-        width: 37px;
-        height: 37px;
-      }
-      .key-icon {
-        width: 47px;
-        height: 47px;
-      }
-      .puzzle-icon {
-        width: 36px;
-        height: 36px;
-      }
-      .society-icon {
-        width: 55px;
-        height: 55px;
-      }
-    }
-  }
+  // .start-section {
+  //   .icons{
+  //     .handshake-icon {
+  //       width: 60px;
+  //       height: 60px;
+  //     }
+  //     .communication-icon {
+  //       width: 52px;
+  //       height: 52px;
+  //     }
+  //     .think-icon {
+  //       width: 52px;
+  //       height: 52px;
+  //     }
+  //     .computer-icon {
+  //       width: 42px;
+  //       height: 42px;
+  //     }
+  //     .conversation-icon {
+  //       width: 37px;
+  //       height: 37px;
+  //     }
+  //     .key-icon {
+  //       width: 47px;
+  //       height: 47px;
+  //     }
+  //     .puzzle-icon {
+  //       width: 36px;
+  //       height: 36px;
+  //     }
+  //     .society-icon {
+  //       width: 55px;
+  //       height: 55px;
+  //     }
+  //   }
+  // }
 }
 
-@media only screen and (min-width: 2048px) and (min-height: 1152px) {
-  .start-section {
-    .icons {
-      .think-icon {
-        top: 44%;
-        left: 29%;
-      }
-      .key-icon {
-        right: 41%;
-      }
-      .conversation-icon {
-        top: 77%;
-        right: 4%;
-      }
-      .computer-icon {
-        right: 1%;
-      }
-      .handshake-icon {
-        left: 32%;
-      }
-      .society-icon {
-        top: 90%;
-      }
-    }
-  }
-}
+// @media only screen and (min-width: 2048px) and (min-height: 1152px) {
+//   .start-section {
+//     .icons {
+//       .think-icon {
+//         top: 44%;
+//         left: 29%;
+//       }
+//       .key-icon {
+//         right: 41%;
+//       }
+//       .conversation-icon {
+//         top: 77%;
+//         right: 4%;
+//       }
+//       .computer-icon {
+//         right: 1%;
+//       }
+//       .handshake-icon {
+//         left: 32%;
+//       }
+//       .society-icon {
+//         top: 90%;
+//       }
+//     }
+//   }
+// }
 
 
 
-@media only screen and (min-width: 1920px) and (min-height: 1200px) {
-  .start-section {
-    .main-image-block {
-      width: 80%;
-    }
-    .icons {
-      .think-icon {
-        top: 48%;
-        left: 29%;
-      }
-      .key-icon {
-        top: 85%;
-        right: 42%;
-      }
-      .conversation-icon {
-        top: 80%;
-        right: 2%;
-      }
-      .computer-icon {
-        top: 60%;
-        right: 1%;
-      }
-      .handshake-icon {
-        left: 35%;
-      }
-      .society-icon {
-        top: 90%;
-      }
-    }
-  }
-}
+// @media only screen and (min-width: 1920px) and (min-height: 1200px) {
+//   .start-section {
+//     .main-image-block {
+//       width: 80%;
+//     }
+//     .icons {
+//       .think-icon {
+//         top: 48%;
+//         left: 29%;
+//       }
+//       .key-icon {
+//         top: 85%;
+//         right: 42%;
+//       }
+//       .conversation-icon {
+//         top: 80%;
+//         right: 2%;
+//       }
+//       .computer-icon {
+//         top: 60%;
+//         right: 1%;
+//       }
+//       .handshake-icon {
+//         left: 35%;
+//       }
+//       .society-icon {
+//         top: 90%;
+//       }
+//     }
+//   }
+// }
 
 // @media only screen and (min-width: 1280px) and (min-height: 800px) {
 //   .start-section {
@@ -291,75 +496,75 @@ only screen and (min-device-pixel-ratio: 1.5) {
        top: 27%;
       }
     }
-    .icons {
-      .think-icon {
-        left: 25%;
-      }
-      .key-icon {
-        top: 83%;
-        right: 43%;
-      }
-      .conversation-icon {
-        top: 81%;
-      }
-      .computer-icon {
-        top: 60%;
-        right: 1%;
-      }
-      .handshake-icon {
-        top: 11%;
-        left: 23%;
-      }
-    }
+    // .icons {
+    //   .think-icon {
+    //     left: 25%;
+    //   }
+    //   .key-icon {
+    //     top: 83%;
+    //     right: 43%;
+    //   }
+    //   .conversation-icon {
+    //     top: 81%;
+    //   }
+    //   .computer-icon {
+    //     top: 60%;
+    //     right: 1%;
+    //   }
+    //   .handshake-icon {
+    //     top: 11%;
+    //     left: 23%;
+    //   }
+    // }
   }
 }
 
 @media only screen and (max-width: 1400px) {
   .start-section {
-    .icons {
-      .handshake-icon {
-        top: 10%;
-        left: 30%;
-      }
-      .think-icon {
-        left: 28%;
-        top: 52%;
-      }
-      .key-icon {
-        top: 83%;
-        right: 40%;
-      }
-    }
-    .main-image-block {
-      right: -5%;
-    }
+    // .icons {
+    //   .handshake-icon {
+    //     top: 10%;
+    //     left: 30%;
+    //   }
+    //   .think-icon {
+    //     left: 28%;
+    //     top: 52%;
+    //   }
+    //   .key-icon {
+    //     top: 83%;
+    //     right: 40%;
+    //   }
+    // }
+    // .main-image-block {
+    //   right: -5%;
+    // }
   }
 }
 
 @media only screen and (max-width: 1300px) {
   .start-section {
-    .icons {
-      .key-icon {
-        top: 83%;
-        right: 45%;
-      }
-      .think-icon {
-        left: 21%;
-        top: 52%;
-      }
-      .handshake-icon {
-        top: 11%;
-        left: 23%;
-      }
-      .puzzle-icon {
-        top: 82%;
-        left: 20%;
-      }
-    }
-    .main-image-block {
-      width: 92%;
-      background-position: -10% 100%;
-    }
+    // .icons {
+    //   .key-icon {
+    //     top: 83%;
+    //     right: 45%;
+    //   }
+    //   .think-icon {
+    //     left: 21%;
+    //     top: 52%;
+    //   }
+    //   .handshake-icon {
+    //     top: 11%;
+    //     left: 23%;
+    //   }
+    //   .puzzle-icon {
+    //     top: 82%;
+    //     left: 20%;
+    //   }
+    // }
+    // .main-image-block {
+    //   width: 92%;
+    //   background-position: -10% 100%;
+    // }
     .text-block {
       font-size: 22px;
       width: 305px;
@@ -373,6 +578,9 @@ only screen and (min-device-pixel-ratio: 1.5) {
       width: 100%;
       background-position: 100% 0%;
       background-size: contain;
+      .main-image-block-icons {
+        display: none;
+      }
     }
     .icons {
       .icon {
@@ -413,7 +621,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .start-section {
     height: 750px;
     .main-image-block {
-      background-position: 100% 20%;
+      // background-position: 100% 20%;
       .main-image-text {
         top: 26%;
       }
@@ -440,6 +648,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .start-section {
     .main-image-block {
       background-position: 100% 27%;
+      top: 0;
     }
   }
 }
