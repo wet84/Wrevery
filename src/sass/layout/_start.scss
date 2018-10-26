@@ -343,6 +343,21 @@ body {
     }
   }
 }
+@media only screen and (min-width: 1650px) {
+  .start-section {
+    .main-image-block {
+      width: 84%;
+    }
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .start-section {
+    .main-image-block {
+      width: 78%;
+    }
+  }
+}
 
 //for retina
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
@@ -644,7 +659,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .start-section {
     .main-image-block {
       background-position: 100% 27%;

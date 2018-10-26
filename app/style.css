@@ -306,6 +306,14 @@ body {
   .start-section .text-block {
     bottom: 18%; } }
 
+@media only screen and (min-width: 1650px) {
+  .start-section .main-image-block {
+    width: 84%; } }
+
+@media only screen and (min-width: 1920px) {
+  .start-section .main-image-block {
+    width: 78%; } }
+
 @media only screen and (max-width: 1600px) {
   .start-section .main-image-block .main-image-text {
     top: 27%; } }
@@ -356,7 +364,7 @@ body {
         height: 25px;
         margin-right: 10px; } }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
   .start-section .main-image-block {
     background-position: 100% 27%;
     top: 0; } }
