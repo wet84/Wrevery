@@ -255,7 +255,7 @@ body {
 
 @media only screen and (min-height: 1200px) {
   .start-section .main-image-block {
-    width: 80%; }
+    width: 91%; }
     .start-section .main-image-block .main-image-text {
       top: 21%; }
     .start-section .main-image-block .main-image-block-icons .think-icon {
@@ -306,13 +306,39 @@ body {
   .start-section .text-block {
     bottom: 18%; } }
 
-@media only screen and (min-width: 1650px) {
-  .start-section .main-image-block {
-    width: 84%; } }
-
 @media only screen and (min-width: 1920px) {
   .start-section .main-image-block {
     width: 78%; } }
+
+@media only screen and (min-height: 1530px) and (min-width: 2040px) {
+  .start-section .main-image-block {
+    width: 93%; } }
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
+  .start-section .icons .handshake-icon {
+    width: 60px;
+    height: 60px; }
+  .start-section .icons .communication-icon {
+    width: 52px;
+    height: 52px; }
+  .start-section .icons .think-icon {
+    width: 52px;
+    height: 52px; }
+  .start-section .icons .computer-icon {
+    width: 42px;
+    height: 42px; }
+  .start-section .icons .conversation-icon {
+    width: 37px;
+    height: 37px; }
+  .start-section .icons .key-icon {
+    width: 47px;
+    height: 47px; }
+  .start-section .icons .puzzle-icon {
+    width: 36px;
+    height: 36px; }
+  .start-section .icons .society-icon {
+    width: 55px;
+    height: 55px; } }
 
 @media only screen and (max-width: 1600px) {
   .start-section .main-image-block .main-image-text {
@@ -378,6 +404,12 @@ body {
   .start-section .main-image-block .main-image-text {
     left: 58%;
     top: 28%; } }
+
+@media all and (orientation: portrait) {
+  .start-section {
+    height: 1020px; }
+    .start-section .main-image-block {
+      height: 1000px; } }
 
 .caption {
   display: inline-block; }
