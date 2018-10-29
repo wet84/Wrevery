@@ -181,45 +181,6 @@ body {
 
 // ***************** media *****************
 
-@media only screen and (min-width: 2048px) and (min-height: 1152px) {
-
-}
-// @media only screen and (max-height: 2000px) {
-//   .start-section {
-//     .main-image-block {
-//       width: 89%;
-//       top: -2%;
-//       right: -2%;
-//       .main-image-text {
-//         top: 21%;
-//       }
-//       .main-image-block-icons {
-//         .think-icon {
-//           top: 53%;
-//         }
-//         .handshake-icon {
-//           left: 15%;
-//         }
-//         .computer-icon {
-//           top: 62%;
-//           right: 10%;
-//         }
-//         .key-icon {
-//           top: 86%;
-//         }
-//         .conversation-icon {
-//           top: 82%;
-//         }
-//       }
-//     }
-//     .icons {
-//       .puzzle-icon {
-//         left: 27%;
-//       }
-//     }
-//   }
-// }
-
 @media only screen and (min-height: 1500px) {
   .start-section {
     .main-image-block {
@@ -392,13 +353,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 1650px) {
-  // .start-section {
-  //   .main-image-block {
-  //     width: 84%;
-  //   }
-  // }
-}
 @media only screen and (min-height: 1530px) and (min-width: 2040px) {
   .start-section {
     .main-image-block {
@@ -406,15 +360,6 @@ body {
     }
   }
 }
-
-
-// @media only screen and (max-height: 1200px) and (max-width: 1600px) {
-//   .start-section {
-//     .main-image-block {
-//       width: 93%;
-//     }
-//   }
-// }
 
 
 //for retina
@@ -460,108 +405,6 @@ only screen and (min-device-pixel-ratio: 1.5) {
   }
 }
 
-// @media only screen and (min-width: 2048px) and (min-height: 1152px) {
-//   .start-section {
-//     .icons {
-//       .think-icon {
-//         top: 44%;
-//         left: 29%;
-//       }
-//       .key-icon {
-//         right: 41%;
-//       }
-//       .conversation-icon {
-//         top: 77%;
-//         right: 4%;
-//       }
-//       .computer-icon {
-//         right: 1%;
-//       }
-//       .handshake-icon {
-//         left: 32%;
-//       }
-//       .society-icon {
-//         top: 90%;
-//       }
-//     }
-//   }
-// }
-
-
-
-// @media only screen and (min-width: 1920px) and (min-height: 1200px) {
-//   .start-section {
-//     .main-image-block {
-//       width: 80%;
-//     }
-//     .icons {
-//       .think-icon {
-//         top: 48%;
-//         left: 29%;
-//       }
-//       .key-icon {
-//         top: 85%;
-//         right: 42%;
-//       }
-//       .conversation-icon {
-//         top: 80%;
-//         right: 2%;
-//       }
-//       .computer-icon {
-//         top: 60%;
-//         right: 1%;
-//       }
-//       .handshake-icon {
-//         left: 35%;
-//       }
-//       .society-icon {
-//         top: 90%;
-//       }
-//     }
-//   }
-// }
-
-// @media only screen and (min-width: 1280px) and (min-height: 800px) {
-//   .start-section {
-//     .header {
-//       .logo {
-//         width: 280px;
-//         height: 75px;
-//         background-size: contain;
-//       }
-//     }
-//     .main-image-block {
-//       width: 80%;
-//       background-position: -10% 100%;
-//     }
-//     .icons {
-//       .think-icon {
-//         left: 22%;
-//         top: 45%;
-//       }
-//       .key-icon {
-//         top: 84%;
-//         right: 41%;
-//       }
-//       .conversation-icon {
-//         top: 80%;
-//         right: 2%;
-//       }
-//       .computer-icon {
-//         top: 60%;
-//         right: 1%;
-//       }
-//       .handshake-icon {
-//         left: 28%;
-//       }
-//     }
-//   }
-// }
-
-// @media screen and (min-aspect-ratio: 16/9), screen and (min-aspect-ratio: 16/10) {
-
-// }
-
 @media only screen and (max-width: 1600px) {
   .start-section {
     .main-image-block {
@@ -569,75 +412,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
        top: 27%;
       }
     }
-    // .icons {
-    //   .think-icon {
-    //     left: 25%;
-    //   }
-    //   .key-icon {
-    //     top: 83%;
-    //     right: 43%;
-    //   }
-    //   .conversation-icon {
-    //     top: 81%;
-    //   }
-    //   .computer-icon {
-    //     top: 60%;
-    //     right: 1%;
-    //   }
-    //   .handshake-icon {
-    //     top: 11%;
-    //     left: 23%;
-    //   }
-    // }
-  }
-}
-
-@media only screen and (max-width: 1400px) {
-  .start-section {
-    // .icons {
-    //   .handshake-icon {
-    //     top: 10%;
-    //     left: 30%;
-    //   }
-    //   .think-icon {
-    //     left: 28%;
-    //     top: 52%;
-    //   }
-    //   .key-icon {
-    //     top: 83%;
-    //     right: 40%;
-    //   }
-    // }
-    // .main-image-block {
-    //   right: -5%;
-    // }
   }
 }
 
 @media only screen and (max-width: 1300px) {
   .start-section {
-    // .icons {
-    //   .key-icon {
-    //     top: 83%;
-    //     right: 45%;
-    //   }
-    //   .think-icon {
-    //     left: 21%;
-    //     top: 52%;
-    //   }
-    //   .handshake-icon {
-    //     top: 11%;
-    //     left: 23%;
-    //   }
-    //   .puzzle-icon {
-    //     top: 82%;
-    //     left: 20%;
-    //   }
-    // }
-    // .main-image-block {
-    //   width: 92%;
-    //   background-position: -10% 100%;
-    // }
     .text-block {
       font-size: 22px;
       width: 305px;

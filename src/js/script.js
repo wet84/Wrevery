@@ -84,5 +84,17 @@ $(document).ready(function() {
   //   });
   // };
   // initMap();
+
+  //about us - slide show 
+// var imgs = ["./img/about-us-img1.png","./img/about-us-img1.png","./img/about-us-img1.png","./img/about-us-img1.png"];
+// var n=0;
+// var chgImg = setInterval(function() {
+//   $('#slide_show').fadeOut(1500, function() {
+//     $(this).css("background-image", "url(" + imgs[n] + ")").fadeIn(1500)
+//   });
+//   n++;
+//   if (n>=imgs.length) n=0;
+// }, 6000);
+
 });
 
