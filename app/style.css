@@ -248,28 +248,26 @@ body {
     .start-section .main-image-block .main-image-block-icons .key-icon {
       top: 88%; }
     .start-section .main-image-block .main-image-block-icons .conversation-icon {
-      top: 82%;
-      right: 6%; }
+      top: 82%; }
   .start-section .icons .puzzle-icon {
     left: 27%; } }
 
 @media only screen and (min-height: 1200px) {
   .start-section .main-image-block {
-    width: 91%; }
+    width: 92%; }
     .start-section .main-image-block .main-image-text {
       top: 21%; }
     .start-section .main-image-block .main-image-block-icons .think-icon {
       top: 52%; }
     .start-section .main-image-block .main-image-block-icons .handshake-icon {
-      left: 8%; }
+      left: 13%; }
     .start-section .main-image-block .main-image-block-icons .computer-icon {
       top: 61%;
-      right: 11%; }
+      right: 8%; }
     .start-section .main-image-block .main-image-block-icons .key-icon {
       top: 86%; }
     .start-section .main-image-block .main-image-block-icons .conversation-icon {
-      top: 83%;
-      right: 11%; } }
+      top: 83%; } }
 
 @media only screen and (max-height: 1080px) {
   .start-section .main-image-block {
@@ -301,6 +299,25 @@ body {
       right: 59%; }
     .start-section .main-image-block .main-image-block-icons .conversation-icon {
       right: 9%; }
+    .start-section .main-image-block .main-image-block-icons .puzzle-icon {
+      left: 31%; }
+  .start-section .text-block {
+    bottom: 18%; } }
+
+@media only screen and (max-height: 768px) {
+  .start-section .main-image-block {
+    width: 86%; }
+    .start-section .main-image-block .main-image-block-icons .think-icon {
+      top: 45%; }
+    .start-section .main-image-block .main-image-block-icons .handshake-icon {
+      left: -4%; }
+    .start-section .main-image-block .main-image-block-icons .computer-icon {
+      top: 52%;
+      right: 10%; }
+    .start-section .main-image-block .main-image-block-icons .key-icon {
+      top: 83%; }
+    .start-section .main-image-block .main-image-block-icons .conversation-icon {
+      top: 80%; }
     .start-section .main-image-block .main-image-block-icons .puzzle-icon {
       left: 31%; }
   .start-section .text-block {

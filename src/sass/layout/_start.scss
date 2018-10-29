@@ -243,7 +243,6 @@ body {
         }
         .conversation-icon {
           top: 82%;
-          right: 6%;
         }
       }
     }
@@ -260,7 +259,8 @@ body {
   .start-section {
     .main-image-block {
       // width: 80%;
-      width: 91%;
+      // width: 91%;
+      width: 92%;
       .main-image-text {
         top: 21%;
       }
@@ -269,18 +269,19 @@ body {
           top: 52%;
         }
         .handshake-icon {
-          left: 8%;
+          // left: 8%;
+          left: 13%;
         }
         .computer-icon {
           top: 61%;
-          right: 11%;
+          // right: 11%;
+          right: 8%;
         }
         .key-icon {
           top: 86%;
         }
         .conversation-icon {
           top: 83%;
-          right: 11%;
         }
       }
     }
@@ -345,6 +346,39 @@ body {
   }
 }
 
+
+@media only screen and (max-height: 768px) {
+  .start-section {
+    .main-image-block {
+      width: 86%;
+      .main-image-block-icons {
+        .think-icon {
+          top: 45%;
+        }
+        .handshake-icon {
+          left: -4%;
+        }
+        .computer-icon {
+          top: 52%;
+          right: 10%;
+        }
+        .key-icon {
+          top:83%;
+        }
+        .conversation-icon {
+          top: 80%;
+        }
+        .puzzle-icon {
+          left: 31%;
+        }
+      }
+    }
+    .text-block {
+      bottom: 18%;
+    }
+  }
+}
+
 @media only screen and (min-width: 1920px) {
   .start-section {
     .main-image-block {
@@ -372,6 +406,7 @@ body {
     }
   }
 }
+
 
 // @media only screen and (max-height: 1200px) and (max-width: 1600px) {
 //   .start-section {
